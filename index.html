@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#173b2b">
+  <meta name="description" content="A wedding invitation for a day to remember.">
+  <title>Andrea &amp; Chris — Wedding invitation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,500&family=DM+Sans:wght@300;400;500&family=Parisienne&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <section class="cover" id="cover" aria-label="Wedding invitation envelope">
+      <div class="cover-copy"><span class="eyebrow">A little something for you</span><h1>With love,<br>and a date to save.</h1><p>We have something lovely to share.</p></div>
+      <button class="envelope-button" id="open-invitation" aria-label="Open the wedding invitation">
+        <span class="envelope" aria-hidden="true">
+          <img class="envelope-art" src="assets/envelope-reference.png" alt="">
+          <span class="wax-seal"><span>AC</span></span>
+        </span>
+        <span class="open-label">Click to open <span aria-hidden="true">↗</span></span>
+      </button>
+      <span class="cover-footer">A day worth celebrating · Toronto, Ontario</span>
+    </section>
+
+    <section class="invitation" id="invitation" aria-label="Wedding invitation" tabindex="-1">
+      <header class="invite-header"><span class="eyebrow">Together with their families</span><span class="tiny-rule"></span><h2>Andrea <i>&amp;</i> Chris</h2><p>invite you to celebrate their wedding</p></header>
+      <div class="date-block"><span class="date-day">SAVE THE DATE</span><span class="date-main">A day <b>to come</b></span><span class="date-year">TORONTO, ONTARIO</span></div>
+      <div class="details-grid">
+        <article><span class="detail-icon">✳</span><h3>The Celebration</h3><p>Wedding celebration</p><p class="place">Steam Whistle Brewery</p><p>255 Bremner Blvd<br>Toronto, Ontario M5V 3M9</p></article>
+        <span class="details-divider" aria-hidden="true"></span>
+        <article><span class="detail-icon">✳</span><h3>More Details</h3><p>We’ll share the schedule soon</p><p class="place">Steam Whistle Brewery</p><p>We look forward to celebrating<br>with you in Toronto</p></article>
+      </div>
+      <div class="dress-code"><span>THE DETAILS</span><p>Date, timing, and dress code to come</p></div>
+      <button class="rsvp-button" id="rsvp-open">Kindly RSVP <span aria-hidden="true">→</span></button>
+      <p class="reply-by">Please let us know if you can join us</p>
+      <footer class="invite-footer">We can’t wait to celebrate with you <span>♥</span></footer>
+    </section>
+  </main>
+
+  <dialog id="rsvp-dialog" aria-labelledby="rsvp-title">
+    <button class="dialog-close" id="rsvp-close" aria-label="Close">×</button>
+    <span class="eyebrow">A little note back</span><h2 id="rsvp-title">Will you join us?</h2>
+    <form id="rsvp-form">
+      <label for="guest-name">Your name</label><input id="guest-name" name="name" autocomplete="name" required placeholder="Name">
+      <label for="guest-email">Email address</label><input id="guest-email" name="email" type="email" autocomplete="email" required placeholder="you@example.com">
+      <label for="attendance">Can you make it?</label><select id="attendance" name="attendance"><option value="joyfully accepts">Joyfully accepts</option><option value="regretfully declines">Regretfully declines</option></select>
+      <label for="guest-count">Number attending</label><select id="guest-count" name="guests"><option>1</option><option>2</option><option>3</option><option>4</option></select>
+      <button class="rsvp-button" type="submit">Send RSVP <span aria-hidden="true">→</span></button>
+      <p class="form-note" id="form-note">Your reply will open in your email app to send.</p>
+    </form>
+  </dialog>
+  <script src="script.js"></script>
+</body>
+</html>
