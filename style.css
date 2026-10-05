@@ -159,3 +159,15 @@ dialog{border-color:#bc9a51;outline:1px solid #bc9a5177;outline-offset:4px}
 .cover.opening .envelope{opacity:1}
 .cover.opening .wax-seal{opacity:1;transform:translate(-50%,-50%)}
 @media(max-width:600px){.envelope{width:min(440px,90vw);height:auto}.wax-seal>span{font-size:clamp(18px,6vw,27px)}}
+.wax-seal>span{font-size:clamp(14px,calc(4.3vw - 4px),30px);display:block;text-align:center;letter-spacing:-.14em;transform:none;margin:0}
+.wax-seal>span{position:relative;left:-2px}
+@media(max-width:600px){.wax-seal>span{font-size:clamp(14px,calc(6vw - 4px),23px)}}
+dialog{max-height:calc(100dvh - 28px);overflow:auto}
+.name-fields{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.name-fields>div{display:grid;gap:8px}
+#food-choices{border:1px solid #c6a56a88;padding:12px 14px 14px;margin:8px 0 0;display:grid;gap:8px}
+#food-choices[hidden]{display:none}
+#food-choices legend{padding:0 7px;font:italic 17px var(--serif);color:#455c4b}
+.honeypot{position:absolute!important;left:-10000px!important;width:1px;height:1px;overflow:hidden}
+form .rsvp-button:disabled{opacity:.6;cursor:wait}
+@media(max-width:520px){dialog{padding:34px 24px 25px}.name-fields{gap:10px}}
