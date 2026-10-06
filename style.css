@@ -238,11 +238,11 @@ form .rsvp-button:disabled{opacity:.6;cursor:wait}
 .envelope-art{z-index:2;transform-origin:50% 15%;transition:transform .85s cubic-bezier(.2,.72,.2,1),filter .85s ease}
 .cover.opening .envelope-letter{z-index:3;animation:letterRise 1.05s cubic-bezier(.18,.7,.22,1) .12s both}
 .cover.opening .envelope-art{transform:translateY(7px) scale(.98) rotateX(-7deg);filter:brightness(1.04)}
-.cover.opening .wax-seal{z-index:4;animation:sealLift .55s ease .25s both}
+.cover.opening .wax-seal{z-index:4;animation:sealPulse .6s ease .25s both}
 .cover.opening .envelope{animation:envelopeSettle .95s ease both}
 .cover.opening .cover-copy,.cover.opening .open-label,.cover.opening .cover-footer{opacity:0;transition:opacity .45s ease .55s}
 .cover.opening{animation:fadeCover .7s ease 1.2s forwards}
 @keyframes letterRise{0%{opacity:0;transform:translate(-50%,27%) scale(.86)}18%{opacity:1}100%{opacity:1;transform:translate(-50%,-62%) scale(1)}}
-@keyframes sealLift{0%,35%{opacity:1;transform:translate(-50%,-50%) scale(1)}100%{opacity:0;transform:translate(-50%,-105%) scale(.8)}}
+@keyframes sealPulse{0%,100%{opacity:1;transform:translate(-50%,-50%) scale(1)}45%{opacity:1;transform:translate(-50%,-50%) scale(1.08)}}
 @keyframes envelopeSettle{0%{transform:translateY(0) scale(1)}35%{transform:translateY(4px) scale(.99)}100%{transform:translateY(0) scale(1)}}
-@media(prefers-reduced-motion:reduce){.cover.opening{animation:none}.cover.opening .envelope-letter{animation:none;opacity:1;transform:translate(-50%,-62%)}.cover.opening .wax-seal{animation:none;opacity:0}.cover.opening .cover-copy,.cover.opening .open-label,.cover.opening .cover-footer{opacity:0}}
+@media(prefers-reduced-motion:reduce){.cover.opening{animation:none}.cover.opening .envelope-letter{animation:none;opacity:1;transform:translate(-50%,-62%)}.cover.opening .wax-seal{animation:none;opacity:1;transform:translate(-50%,-50%)}.cover.opening .cover-copy,.cover.opening .open-label,.cover.opening .cover-footer{opacity:0}}
