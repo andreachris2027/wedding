@@ -215,3 +215,28 @@ form .rsvp-button:disabled{opacity:.6;cursor:wait}
 .wedding-palette li{color:#666a5b}
 .wax-seal>span{font-size:clamp(13px,calc(3.9vw - 4px),27px);left:-3px}
 @media(max-width:600px){.wax-seal>span{font-size:clamp(13px,calc(5.5vw - 4px),21px);left:-3px}}
+.thank-you-note{width:min(560px,100%);margin:34px auto 4px;padding:24px 30px 20px;border-top:1px solid #b58b4880;border-bottom:1px solid #b58b4880;text-align:center;color:#eee5d3}
+.thank-you-flourish{display:block;margin-bottom:3px;color:#c4a15d;font:32px/1 var(--serif)}
+.thank-you-note h3{margin:0 0 8px;color:#e2c783;font:italic 500 28px/1.1 var(--serif)}
+.thank-you-note p{margin:5px 0;color:#e4dece;font:italic 16px/1.55 var(--serif)}
+@media(max-width:600px){.thank-you-note{margin-top:28px;padding:21px 12px 17px}.thank-you-note p{font-size:15px}}
+.arrival-time{margin-top:8px!important;color:#8e7040;font-weight:500}
+
+/* Lift a keepsake card from the envelope before revealing the invitation. */
+.envelope{isolation:isolate;overflow:visible}
+.envelope-letter{position:absolute;z-index:1;left:50%;top:22%;width:62%;height:67%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:9px;padding:12px 8px;background:linear-gradient(145deg,#fffdf7,#f0e8d8);border:1px solid #d6c9aa;box-shadow:0 5px 16px #1b211944;color:#174538;opacity:0;transform:translate(-50%,27%) scale(.86);pointer-events:none}
+.envelope-letter .letter-monogram{font:italic 500 clamp(12px,2.8vw,22px)/1.1 var(--serif);text-align:center;white-space:nowrap}
+.envelope-letter .letter-monogram i{font-size:.8em;color:#bd9147}
+.envelope-letter .letter-rule{width:26px;background:#bd9147}
+.envelope-letter .letter-date{font-size:clamp(5px,.85vw,7px);letter-spacing:.14em;color:#7a705c}
+.envelope-art{z-index:2;transform-origin:50% 15%;transition:transform .85s cubic-bezier(.2,.72,.2,1),filter .85s ease}
+.cover.opening .envelope-letter{z-index:3;animation:letterRise 1.05s cubic-bezier(.18,.7,.22,1) .12s both}
+.cover.opening .envelope-art{transform:translateY(7px) scale(.98) rotateX(-7deg);filter:brightness(1.04)}
+.cover.opening .wax-seal{z-index:4;animation:sealLift .55s ease .25s both}
+.cover.opening .envelope{animation:envelopeSettle .95s ease both}
+.cover.opening .cover-copy,.cover.opening .open-label,.cover.opening .cover-footer{opacity:0;transition:opacity .45s ease .55s}
+.cover.opening{animation:fadeCover .7s ease 1.2s forwards}
+@keyframes letterRise{0%{opacity:0;transform:translate(-50%,27%) scale(.86)}18%{opacity:1}100%{opacity:1;transform:translate(-50%,-62%) scale(1)}}
+@keyframes sealLift{0%,35%{opacity:1;transform:translate(-50%,-50%) scale(1)}100%{opacity:0;transform:translate(-50%,-105%) scale(.8)}}
+@keyframes envelopeSettle{0%{transform:translateY(0) scale(1)}35%{transform:translateY(4px) scale(.99)}100%{transform:translateY(0) scale(1)}}
+@media(prefers-reduced-motion:reduce){.cover.opening{animation:none}.cover.opening .envelope-letter{animation:none;opacity:1;transform:translate(-50%,-62%)}.cover.opening .wax-seal{animation:none;opacity:0}.cover.opening .cover-copy,.cover.opening .open-label,.cover.opening .cover-footer{opacity:0}}
