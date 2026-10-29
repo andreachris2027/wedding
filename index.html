@@ -18,7 +18,7 @@
       <div class="cover-copy"><span class="eyebrow">A little something for you</span><h1>With love,<br>and a date to save.</h1><p>We have something lovely to share.</p></div>
       <button class="envelope-button" id="open-invitation" aria-label="Open the wedding invitation">
         <span class="envelope" aria-hidden="true">
-          <span class="envelope-letter"><span class="letter-monogram">Andrea <i>&amp;</i> Chris</span><span class="letter-rule"></span><span class="letter-date">SEPTEMBER 18, 2027</span></span>
+          <span class="envelope-letter"><span class="letter-monogram">Andrea <i>&amp;</i> Chris</span><span class="letter-rule"></span><span class="letter-date">SEPTEMBER 18, 2027</span><span class="envelope-pets"><img class="pet-cat" src="assets/cat-watercolor.png" alt=""><img class="pet-dog" src="assets/dog-watercolor.png" alt=""></span></span>
           <img class="envelope-art" src="assets/envelope-reference.png" alt="">
           <span class="wax-seal"><span>AC</span></span>
         </span>
@@ -30,11 +30,34 @@
     <section class="invitation" id="invitation" aria-label="Wedding invitation" tabindex="-1">
       <header class="invite-header"><span class="eyebrow">Together with their families</span><span class="tiny-rule"></span><h2>Andrea <i>&amp;</i> Chris</h2><p>invite you to celebrate their wedding</p></header>
       <div class="date-block"><span class="date-day">SATURDAY</span><span class="date-main">September <b>18</b></span><span class="date-year">2027</span></div>
-      <div class="details-grid">
-        <article><span class="detail-icon">✳</span><h3>The Celebration</h3><p>Wedding celebration</p><p class="place">Steam Whistle Tap Room</p><p>255 Bremner Blvd<br>Toronto, Ontario M5V 3M9</p><p class="arrival-time">Guests are to arrive at 5:30pm</p></article>
-        <span class="details-divider" aria-hidden="true"></span>
-        <article><span class="detail-icon">✳</span><h3>More Details</h3><p>Please bring your 🧩 puzzle piece with you to the wedding to sign and make our guestbook puzzle. We will have gold pens so pieces can be signed at the wedding.</p></article>
+      <div class="pet-easter-eggs" aria-hidden="true">
+        <img class="pet-cat" src="assets/cat-watercolor.png" alt="" width="600" height="720">
+        <img class="pet-dog" src="assets/dog-watercolor.png" alt="" width="549" height="720">
       </div>
+      <svg class="flower-symbols" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+        <symbol id="bird-of-paradise" viewBox="0 0 100 120">
+          <path d="M49 112C51 91 48 76 50 60M49 94C34 77 26 78 16 77c8 12 19 19 34 20M52 102c11-17 22-21 35-24-7 13-17 22-35 28" fill="none" stroke="#54745d" stroke-linecap="round" stroke-width="4"/>
+          <path d="M48 65C29 56 20 39 17 18c17 7 29 21 35 43M52 70c18-9 28-22 32-42-18 8-29 21-36 43" fill="#41694f" stroke="#78906c" stroke-width="2"/>
+          <path d="M47 60C31 48 22 33 24 12c11 9 19 18 26 34 4-14 13-25 28-34-2 22-11 39-27 51" fill="#d98a42" stroke="#e8b05c" stroke-linejoin="round" stroke-width="2"/>
+          <path d="M47 62C35 51 33 40 37 28c7 9 12 17 14 29 4-13 11-23 22-31-1 17-8 30-21 39" fill="#d9ad57"/>
+          <path d="M48 63c-3-13 0-23 8-32 3 10 3 20-2 32 9-10 19-15 31-17-8 14-19 23-35 25" fill="#28756a" stroke="#80a18a" stroke-width="2"/>
+        </symbol>
+      </svg>
+      <div class="details-grid">
+        <article><span class="detail-icon">✳</span><h3>The Celebration</h3><p>Wedding celebration</p><p class="place">Steam Whistle Tap Room</p><p>255 Bremner Blvd<br>Toronto, Ontario M5V 3M9</p></article>
+        <span class="details-divider" aria-hidden="true"></span>
+        <article><span class="detail-icon">✳</span><h3>More Details</h3><p>Please bring your 🧩 puzzle piece with you to the wedding to sign and make our guestbook puzzle. We will have pens so pieces can be signed at the wedding.</p></article>
+      </div>
+      <section class="wedding-timeline" aria-labelledby="timeline-title">
+        <svg class="bird-flower bird-flower-timeline" viewBox="0 0 100 120" aria-hidden="true" focusable="false"><use href="#bird-of-paradise"></use></svg>
+        <h3 id="timeline-title">Timeline</h3>
+        <ol>
+          <li><span class="timeline-event">Guest Arrival</span><time datetime="17:30">5:30pm</time></li>
+          <li><span class="timeline-event">Ceremony</span><time datetime="18:00">6:00pm</time></li>
+          <li><span class="timeline-event">Cocktail Hour</span><time datetime="18:30">6:30pm</time></li>
+          <li><span class="timeline-event">Dinner</span><time datetime="19:30">7:30pm</time></li>
+        </ol>
+      </section>
       <section class="thank-you-note" aria-label="A thank-you note">
         <span class="thank-you-flourish" aria-hidden="true">❧</span>
         <h3>Thank you</h3>
@@ -43,6 +66,7 @@
       </section>
       <div class="dress-code"><span>DRESS CODE</span><p>Formal attire but please wear comfortable shoes or bring shoes to change so we can dance the night away ✨</p></div>
       <div class="wedding-palette" aria-label="Wedding color palette">
+        <svg class="bird-flower bird-flower-palette" viewBox="0 0 100 120" aria-hidden="true" focusable="false"><use href="#bird-of-paradise"></use></svg>
         <h4>Our colours</h4>
         <ul>
           <li><span style="--swatch:#073b33" aria-hidden="true"></span><span>Deep teal</span></li>
@@ -55,7 +79,10 @@
           <li><span style="--swatch:#c99a43" aria-hidden="true"></span><span>Gilded gold</span></li>
         </ul>
       </div>
-      <a class="rsvp-button" id="rsvp-open" href="https://docs.google.com/forms/d/e/1FAIpQLSfoPfCt1dNxEBAID5X1URuwMyJA-MfxVXHWKgtEF5whfN3X5w/viewform?usp=header" target="_blank" rel="noopener noreferrer">Kindly RSVP <span aria-hidden="true">→</span></a>
+      <div class="rsvp-pets-stage">
+        <img class="rsvp-peeking-pets" src="assets/rsvp-pets-watercolor.png" alt="" aria-hidden="true" width="800" height="400">
+        <a class="rsvp-button" id="rsvp-open" href="https://docs.google.com/forms/d/e/1FAIpQLSfoPfCt1dNxEBAID5X1URuwMyJA-MfxVXHWKgtEF5whfN3X5w/viewform?usp=header" target="_blank" rel="noopener noreferrer">Kindly RSVP <span aria-hidden="true">→</span></a>
+      </div>
       <p class="reply-by">Please let us know if you can join us</p>
       <footer class="invite-footer">We can’t wait to celebrate with you <span>♥</span></footer>
     </section>
