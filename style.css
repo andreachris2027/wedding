@@ -201,7 +201,7 @@ form .rsvp-button:disabled{opacity:.6;cursor:wait}
 .reply-by{color:#757663}
 .wedding-palette{margin:18px auto 0;max-width:300px;padding-top:13px;border-top:1px solid #b58b4855}
 .wedding-palette h4{margin:0 0 10px;color:#8e7040;font:italic 17px var(--serif)}
-.wedding-palette ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px 7px}
+.wedding-palette ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px 7px}
 .wedding-palette li{display:grid;justify-items:center;gap:4px;color:#666a5b;font-size:8px;line-height:1.2}
 .wedding-palette li>span:first-child{width:28px;height:28px;border-radius:50%;background:var(--swatch);border:1px solid #806c493b;box-shadow:0 2px 5px #28392b1a}
 @media(max-width:600px){.wedding-palette{max-width:260px}.wedding-palette li{font-size:7px}.wedding-palette li>span:first-child{width:25px;height:25px}}
@@ -240,8 +240,9 @@ form .rsvp-button:disabled{opacity:.6;cursor:wait}
 .wedding-timeline,.wedding-palette{position:relative}
 .bird-flower{position:absolute;width:34px;height:42px;opacity:.88;pointer-events:none;filter:drop-shadow(0 2px 2px #07150c20)}
 .bird-flower-timeline{right:-16px;top:-18px;transform:rotate(9deg)}
+.bird-flower-timeline-left{left:-16px;bottom:-17px;transform:scaleX(-1) rotate(-10deg)}
 .bird-flower-palette{right:-12px;top:-20px;width:27px;height:33px;transform:rotate(14deg)}
-@media(max-width:600px){.bird-flower{width:27px;height:34px}.bird-flower-timeline{right:-7px;top:-15px}.bird-flower-palette{right:-5px;top:-15px;width:23px;height:29px}}
+@media(max-width:600px){.bird-flower{width:27px;height:34px}.bird-flower-timeline{right:-7px;top:-15px}.bird-flower-timeline-left{left:-7px;bottom:-12px}.bird-flower-palette{right:-5px;top:-15px;width:23px;height:29px}}
 
 /* Lift a keepsake card from the envelope before revealing the invitation. */
 .envelope{isolation:isolate;overflow:visible}
@@ -275,3 +276,4 @@ form .rsvp-button:disabled{opacity:.6;cursor:wait}
 .rsvp-peeking-pets{position:absolute;z-index:0;left:50%;top:-91px;width:min(224px,64vw);height:auto;transform:translateX(-50%);pointer-events:none}
 .rsvp-pets-stage .rsvp-button{position:relative;z-index:1;margin-top:0}
 .invite-header .eyebrow{font-size:clamp(12px,1.4vw,15px);font-weight:500;letter-spacing:.2em;color:#e1c276;text-shadow:0 1px 8px #0005}
+.palette-note{margin:14px 0 0;color:#5e6655;font:italic 12px/1.45 var(--serif)}
