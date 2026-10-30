@@ -276,4 +276,4 @@ form .rsvp-button:disabled{opacity:.6;cursor:wait}
 .rsvp-peeking-pets{position:absolute;z-index:0;left:50%;top:-91px;width:min(224px,64vw);height:auto;transform:translateX(-50%);pointer-events:none}
 .rsvp-pets-stage .rsvp-button{position:relative;z-index:1;margin-top:0}
 .invite-header .eyebrow{font-size:clamp(12px,1.4vw,15px);font-weight:500;letter-spacing:.2em;color:#e1c276;text-shadow:0 1px 8px #0005}
-.palette-note{margin:14px 0 0;color:#5e6655;font:italic 12px/1.45 var(--serif)}
+.wedding-palette .palette-note{margin:14px 0 0;color:#465340;font:italic 14px/1.45 var(--serif)}
